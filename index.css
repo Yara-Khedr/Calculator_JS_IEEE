@@ -85,15 +85,6 @@ body{
     margin: 0.5vh;
     padding: 0.5vh;
 }
-#white-space{
-    margin-top: 3vh;
-    height: 5vh;
-    width: 45vh;
-}
-#white-space:hover{
-    background-color: azure;
-}
-
 
 input{
     background-color: azure;
@@ -107,6 +98,17 @@ input{
     box-shadow: 0 0 10px hsla(212, 83%, 50%, 0.8);
     transition : box-shadow 0.3s ease;
 }
+
+#white-space{
+    margin-top: 3vh;
+    height: 5vh;
+    width: 45vh;
+}
+#white-space:hover{
+    background-color: azure;
+    color: rgb(9, 11, 109);
+}
+
 #ac-button{
     background: transparent;
     color:#fff;

@@ -17,44 +17,44 @@
                 <div class="top-part">
                     <img src="White Overlay.png">
                     <!-- <label for="Companyname">IEEE Calculator</label><br>   -->
-                    <input type="text" id="white-space" name="Calculator-display" readonly>
+                    <input type="text" id="white-space" name="display" readonly>
                 </div>
                 <div class="button-container">
                     <div class="buttons">
-                        <input type="button" id="ac-button" value="AC">
-                        <input type="button" id="ac-button"value="+/-">
-                        <input type="button" id="ac-button"value="%">
-                        <input type="button" id="ac-button"value="/">
+                        <input type="button" id="ac-button" value="AC" onclick="clearDisplay()">
+                        <input type="button" id="ac-button"value="+/-" onclick="toggleSign()">
+                        <input type="button" id="ac-button"value="%" onclick="updateDisplay('%')">
+                        <input type="button" id="ac-button"value="/" onclick="updateDisplay('/')">
                     </div>
                     <div class="buttons">
-                        <input type="button" value="7">
-                        <input type="button" value="8">
-                        <input type="button" value="9">
-                        <input type="button" id="ac-button" value="*">
+                        <input type="button" value="7" onclick="updateDisplay('7')">
+                        <input type="button" value="8" onclick="updateDisplay('8')">
+                        <input type="button" value="9" onclick="updateDisplay('9')">
+                        <input type="button" id="ac-button" value="*" onclick="updateDisplay('*')">
                     </div>
                     <div class="buttons">
-                        <input type="button" value="4">
-                        <input type="button" value="5">
-                        <input type="button" value="6">
-                        <input type="button" id="ac-button" value="-">
+                        <input type="button" value="4" onclick="updateDisplay('4')">
+                        <input type="button" value="5" onclick="updateDisplay('5')">
+                        <input type="button" value="6" onclick="updateDisplay('6')">
+                        <input type="button" id="ac-button" value="-" onclick="updateDisplay('-')">
                     </div>
                     <div class="buttons">
-                        <input type="button" value="1">
-                        <input type="button" value="2">
-                        <input type="button" value="3">
-                        <input type="button" id="ac-button" value="+">
+                        <input type="button" value="1" onclick="updateDisplay('1')">
+                        <input type="button" value="2" onclick="updateDisplay('2')">
+                        <input type="button" value="3" onclick="updateDisplay('3')">
+                        <input type="button" id="ac-button" value="+" onclick="updateDisplay('+')">
                     </div>
                     <div class="buttons">
                         <input type="button" value=":)">
-                        <input type="button" value="0">
-                        <input type="button" value=".">
-                        <input type="button" id="ac-button" value="=">
+                        <input type="button" value="0" onclick="updateDisplay('0')">
+                        <input type="button" value="." onclick="updateDisplay('.')">
+                        <input type="button" id="ac-button" value="=" onclick="calculateResult()">
                     </div>
                 </div>
                 
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
