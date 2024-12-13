@@ -100,6 +100,8 @@ input{
 }
 
 #white-space{
+    padding-right: 2vh;
+    text-align: right;
     margin-top: 3vh;
     height: 5vh;
     width: 45vh;
@@ -122,4 +124,77 @@ input:hover{
     background: transparent;
     color: white;
     outline: 1px solid #fff;
+}
+
+@media screen and (max-width: 425px) {
+    #white-space{ 
+        height: 4vh;
+        width: 25vh;
+    }
+    
+    input{
+        height:4vh;
+        width: 4vh;
+        margin:0.2vh;
+        font-size: 2vh;
+    }
+
+    img{
+        width:10vh;
+        height:10vh;
+    }
+
+    .top-part{
+        margin-top: 0vh;
+  
+    }
+    
+
+}
+@media screen and (max-width: 768px){
+    input{
+        height:6vh;
+        width: 6vh;
+        margin:0.2vh;
+        font-size: 2.5vh;
+        
+    }
+
+    .calculator{    
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    input{
+        height:5vh;
+        width: 5vh;
+        margin:0.2vh;
+        font-size: 2.3vh;
+    }
+    img{
+        width:9.5vh;
+        height:9.5vh;
+    }
+
+    .buttons{
+        margin: 0.1vh;
+       
+    }
+}
+
+@media screen and (max-width: 1440px){
+    input{
+        height:5vh;
+        width: 5vh;
+        margin:0.2vh;
+        font-size: 2.3vh;
+    }
+    img{
+        width:9.5vh;
+        height:9.5vh;
+    }
+    .buttons{
+        margin: 0.1vh; 
+    }
 }
