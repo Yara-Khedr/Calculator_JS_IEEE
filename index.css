@@ -10,7 +10,7 @@
 }
 
 .top-part{
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,8 +19,8 @@
 }
 
 img{
-    width:12vh;
-    height:12vh;
+    width:10vh;
+    height:10vh;
 }
 
 label{
@@ -41,12 +41,12 @@ body{
 }
 
 .calculator{    
-    width: 330px;
-    height: 480px;
+    width: 40vh;
+    height: 60vh;
     position: relative;
     z-index: 1;
     background-color: rgba(8, 25, 113, 0.299);
-    box-shadow: 0 4px 6px rgba(17, 53, 160, 0.1);
+    box-shadow: 0 4 6px rgba(17, 53, 160, 0.1);
     border-radius: 10px;
     border: 2px solid #ffffff;
     box-shadow: 0 0 150px hsla(228, 84%, 51%, 0.8);
@@ -56,7 +56,7 @@ body{
 
 .calculator::before{
     content:'';
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -69,7 +69,7 @@ body{
 .container{
     background-color: none;
     padding: 2vh;
-    max-width: 250px;
+    max-width: 50vh;
     margin: 0 auto;
     text-align: center;
     
@@ -77,22 +77,29 @@ body{
 }
 
 .button-container{
-    margin: 1vh;
     justify-self: center;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-self: center;
+    margin: 1vh;
+    column-gap: 5vh;
+    
 }
 
 .buttons{
-    margin: 0.5vh;
-    padding: 0.5vh;
+    justify-self: center;
+    position: relative;
+    margin: 0.7vh;
 }
 
 input{
     background-color: azure;
     border-radius: 30px;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     font-weight:lighter;
-    height:6vh;
-    width: 6vh;
+    height:5.5vh;
+    width: 5.5vh;
     border: none;
     cursor: pointer;
     box-shadow: 0 0 10px hsla(212, 83%, 50%, 0.8);
@@ -102,21 +109,22 @@ input{
 #white-space{
     padding-right: 2vh;
     text-align: right;
+    font-weight: bolder;
     margin-top: 3vh;
-    height: 5vh;
-    width: 45vh;
+    height: 4vh;
+    width: 40vh;
 }
 #white-space:hover{
     background-color: azure;
     color: rgb(9, 11, 109);
 }
 
-#ac-button{
+#operations{
     background: transparent;
     color:#fff;
     outline: 1px solid #fff;
 }
-#ac-button:hover{
+#operations:hover{
     background-color: #fff;
     color: rgb(9, 11, 109);
 }
@@ -148,6 +156,7 @@ input:hover{
         margin-top: 0vh;
   
     }
+ 
     
 
 }
@@ -160,9 +169,7 @@ input:hover{
         
     }
 
-    .calculator{    
-        height: 520px;
-    }
+
 }
 
 @media screen and (max-width: 1024px){
@@ -177,10 +184,6 @@ input:hover{
         height:9.5vh;
     }
 
-    .buttons{
-        margin: 0.1vh;
-       
-    }
 }
 
 @media screen and (max-width: 1440px){
@@ -194,7 +197,5 @@ input:hover{
         width:9.5vh;
         height:9.5vh;
     }
-    .buttons{
-        margin: 0.1vh; 
-    }
+
 }
