@@ -1,12 +1,9 @@
 *{
     margin: 0;
+    padding: 0;
     color: rgb(9, 11, 109);
     font-family:'Poppins' , sans-serif;
-}
-.whole-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+    
 }
 
 .top-part{
@@ -23,20 +20,19 @@ img{
     height:10vh;
 }
 
-label{
+/* label{
     padding: 1vh;
     margin: 2vh;
     color: #fff;
     font-size: 3vh;
-}
+} */
 
 body{
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('1_fseafaww1.jpg');
+    background-image: url('image.jpg');
     background-size: cover;
 }
 
@@ -51,6 +47,11 @@ body{
     border: 2px solid #ffffff;
     box-shadow: 0 0 150px hsla(228, 84%, 51%, 0.8);
     transition : box-shadow 0.3s ease;
+    /* background-color: none;
+    padding: 2vh;
+    max-width: 50vh;
+    margin: 0 auto;
+    text-align: center;  */
     
 }
 
@@ -71,9 +72,7 @@ body{
     padding: 2vh;
     max-width: 50vh;
     margin: 0 auto;
-    text-align: center;
-    
-    
+    text-align: center;     
 }
 
 .button-container{
